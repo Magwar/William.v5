@@ -37,6 +37,7 @@ body {
     list-style: none;
     font-size: 23px;
     font-weight: 500;
+    padding: 0;
 }
 
 .nav_links li a,
@@ -44,15 +45,64 @@ body {
     text-decoration: none;
     color: #000;
 }
+
 /* Main Section */
 .query {
     font-size: 20px;
     font-family: monospace;
 }
 
+/* -------------------------------------- */
+a {
+    color: inherit;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.current-projects,
+.completed-projects,
+.languages {
+    flex: 1 1 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.languages ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.languages li {
+    text-align: center;
+    list-style: none;
+}
+
+.languages li i {
+    font-size: 25px;
+}
+
 footer {
     margin-top: auto;
     padding: 10px;
     text-align: center;
+    font-weight: 500;
     font-size: 18px;
+    background-color: rgb(250, 235, 215, 0.5);
 }
